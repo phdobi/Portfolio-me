@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donald Nwobi | Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:#fff;
+line-height:1.6;
+}
+
+header{
+background:#161b22;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#58a6ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#58a6ff;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+padding:80px 8%;
+min-height:90vh;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero span{
+color:#58a6ff;
+}
+
+.hero h3{
+color:gold;
+margin-bottom:20px;
+}
+
+.hero p{
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#58a6ff;
+padding:14px 30px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#2d7de0;
+}
+
+.hero img{
+width:280px;
+height:280px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid #58a6ff;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#161b22;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:15px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+padding:15px;
+border:none;
+background:#58a6ff;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2d7de0;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#161b22;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+justify-content:center;
+}
+
+.hero img{
+margin-top:40px;
+width:220px;
+height:220px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Donald Nwobi</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Donald Nwobi</span></h1>
+
+<h3 id="typing"></h3>
+
+<p>
+Electrical Technician with a growing passion for Web Development, AI, and Vibe Coding. I enjoy building practical digital solutions while continuously improving my technical skills.
+</p>
+
+<a href="#projects" class="btn">View My Projects</a>
+
+</div>
+
+<div>
+
+<img src="https://via.placeholder.com/300" alt="Profile Photo">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p style="text-align:center;max-width:850px;margin:auto;">
+I'm an Electrical Technician with experience in electrical maintenance and AC/DC systems. I'm currently learning HTML, CSS, JavaScript, and AI development while building real-world projects. My goal is to combine engineering and software development to solve practical problems.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>HTML5</h3>
+<p>Semantic and accessible web pages.</p>
+</div>
+
+<div class="card">
+<h3>CSS3</h3>
+<p>Responsive layouts and modern UI.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Interactive websites and applications.</p>
+</div>
+
+<div class="card">
+<h3>Electrical Maintenance</h3>
+<p>Generators, AC/DC systems and troubleshooting.</p>
+</div>
+
+<div class="card">
+<h3>Git & GitHub</h3>
+<p>Version control and project hosting.</p>
+</div>
+
+<div class="card">
+<h3>AI & Vibe Coding</h3>
+<p>Learning to build faster using AI tools.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Simple Calculator</h3>
+<p>Calculator built using HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Responsive portfolio showcasing my work.</p>
+</div>
+
+<div class="card">
+<h3>Contact Form</h3>
+<p>Interactive contact page with JavaScript.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="6" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Donald Nwobi | Built with HTML, CSS & JavaScript</p>
+
+</footer>
+
+<script>
+
+const words=[
+"Electrical Technician",
+"Future Vibe Coder",
+"Web Developer",
+"AI Enthusiast"
+];
+
+let i=0;
+
+setInterval(()=>{
+document.getElementById("typing").textContent=words[i];
+i=(i+1)%words.length;
+},2000);
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you! Your message has been received.");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
